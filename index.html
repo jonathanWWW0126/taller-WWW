@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Movimientos Cliente</title>
+    <meta charset="utf-8">
+    <meta name="viewport" contect="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" contect="ie-edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row margen" style="margin-top: 100px;">
+            <div class="col-md-4">
+                <div class="form-inline float-md-right">
+                    <label>Nombre Movimiento</label>
+                </div>
+            </div>
+            <div class="col-5">
+                <form>
+                    <input id="nombreMovimiento" type="text" class="form-control" />
+                </form>
+            </div>
+        </div>
+        <div class="row margen">
+            <div class="col-4">
+                <div class="form-inline float-md-right">
+                    <label>Tipo Movimiento</label>
+                </div>
+            </div>
+            <div class="col-8">
+                <form class="form-inline">
+                <select id="tipoMovimiento" class="form-control">
+                    <option value="Tipo1">Tipo1</option>
+                    <option value="Tipo2">Tipo2</option>
+                </select>
+                </form>
+            </div>
+        </div>
+        <div class="row margen">
+            <div class="col-4">
+                <div class="form-inline float-md-right">
+                    <label>Valor Movimiento</label>
+                </div>
+            </div>
+            <div class="col-8">
+                <form class="form-inline">
+                    <input id="valorMovimiento" type="text" class="form-control" placeholder="$"/>
+                </form>
+            </div>
+        </div>
+        <div class="row margen">
+            <div class="col-9 align-self-end">
+                 <button id="btn-add" class="btn btn-default float-md-right">Crear Movimiento</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table id="grid" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nombre Movimiento</th>
+                            <th>Tipo Movimiento</th>
+                            <th>Valor Movimiento</th>
+                            <th>Fecha Registro</th>
+                            <th>Acción</th>
+                            <th style="width:80px;">
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/CRUD.js"></script>
+</body>
+
+</html>
